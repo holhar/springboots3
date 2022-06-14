@@ -1,0 +1,20 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+
+cloud:
+  aws:
+    region:
+      static: eu-central-1
+    stack:
+      auto: false
+    credentials:
+      profile-name: default
+logging:
+  level:
+    com:
+      amazonaws:
+        util:
+          EC2MetadataUtils: error
